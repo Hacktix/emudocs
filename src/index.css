@@ -1,13 +1,34 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Font Declarations */
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url("assets/fonts/PressStart2P-Regular.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url("assets/fonts/PTSansNarrow-Regular.ttf") format("truetype");
+}
+
+/* General Contents */
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    margin: 10px;
+    font-family: 'PT Sans Narrow';
+    font-size: small;
+}
+
+h1, h2, h3 {
+    font-family: 'Press Start 2P';
+}
+
+p {
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    color: cyan;
 }

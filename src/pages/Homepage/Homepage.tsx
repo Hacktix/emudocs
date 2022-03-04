@@ -24,7 +24,7 @@ export default function Homepage() {
 
         <br />
 
-        <h2>I found incomplete/inaccurate info!</h2>
+        <h2>I found incomplete / inaccurate info!</h2>
         <p>
             <a href="https://github.com/Hacktix/emudocs/issues">Click here and report it!</a> Emudocs is mainly developed by a single person, so it (at least partially)
             relies on user reports to make sure that all information is accurate, complete and easily comprehensible. Also, if you're knowledgeable about a certain system

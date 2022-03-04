@@ -6,9 +6,8 @@ import "./App.css";
 
 export default function App() {
     return (
-        <div>
+        <div className="MainContainer">
             <Header />
-            <hr className="HeaderSeparator" />
             <div className="AppContent">
                 <Routes>
                     <Route path="*" element={<Homepage />} />

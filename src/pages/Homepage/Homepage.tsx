@@ -1,6 +1,7 @@
 export default function Homepage() {
     return (
         <>
+        <h2>What is Emudocs?</h2>
         <p>
             This is a website aimed at Emulator Developers with the goal of providing unambiguous and accurate, yet understandable documentation of various systems.
             While it does aim to bring quality and accuracy similar to other technical documentations, the main purpose of Emudocs is to add visual and, if applicable,

@@ -18,6 +18,7 @@ body {
     margin: 10px;
     font-family: 'PT Sans Narrow';
     font-size: small;
+    text-align: justify;
 }
 
 h1, h2, h3 {

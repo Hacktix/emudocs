@@ -1,0 +1,24 @@
+.DropdownLabel {
+    cursor: pointer;
+    user-select: none;
+}
+
+.DropdownBox {
+    position: relative;
+}
+
+.DropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #1a1a1a;
+    top: 1.5em;
+    right: 0;
+    min-width: 150px;
+    padding-left: 1em;
+    padding-right: 1em;
+    z-index: 1;
+}
+
+.DropdownBox:hover .DropdownContent {
+    display: block;
+}

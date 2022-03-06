@@ -1,6 +1,7 @@
 .DropdownLabel {
     cursor: pointer;
     user-select: none;
+    margin: 0px;
 }
 
 .DropdownBox {

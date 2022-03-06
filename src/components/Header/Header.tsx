@@ -12,7 +12,7 @@ export default function Header() {
             </Link>
             <div className="NavigationContainer">
                 <Link to="/basics">
-                    <h3>Emudev Basics</h3>
+                    <h3 className="NavigationLabel">Emudev Basics</h3>
                 </Link>
                 <DropdownMenu label="Arcade">
                     <p>Coming Soon!</p>

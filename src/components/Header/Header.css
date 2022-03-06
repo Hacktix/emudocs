@@ -1,20 +1,31 @@
 .AppHeader {
+    position: sticky;
+    top: 0;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0px 3px 3px black;
     width: 100%;
-    min-height: 7.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 5em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .AppBanner {
-    max-width: 100%;
-    max-height: 6em;
+    max-height: 5em;
 }
 
 .NavigationContainer {
     display: flex;
     flex-wrap: wrap;
     column-gap: 2em;
+    row-gap: 1em;
     max-width: 60%;
     justify-content: flex-end;
+    text-align: right;
+}
+
+.NavigationLabel {
+    margin: 0px;
 }

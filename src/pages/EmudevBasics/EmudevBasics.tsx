@@ -1,3 +1,5 @@
+import MemoryMap from "../../components/MemoryMap/MemoryMap"
+
 export default function EmudevBasics() {
     return (
         <>
@@ -50,8 +52,20 @@ export default function EmudevBasics() {
             So let's connect it up! The first byte of RAM will be address <code>0x0000</code>, the next byte <code>0x0001</code> and so on, until we hit <code>0x0FFF</code>. And voilà!
             Now the <b>Memory Region</b> from address <code>0x0000</code> to <code>0x0FFF</code> is connected to our RAM, and we still have a ton of memory addresses remaining that are
             unassigned, which we could use for other hardware! This assignment of Memory Regions is usually documented in something known as the <b>Memory Map</b>, which shows which
-            Memory Regions are connected to which hardware.
+            Memory Regions are connected to which hardware. These memory maps usually look something like this:
         </p>
+        <MemoryMap
+            maxAddress={0xFFFF}
+            addressPrefix="$"
+            regions={[
+                {startAddress: 0x0000, endAddress: 0x7FFF, color:{r: 200,g: 25, b: 25}, name: "ROM", description: "Cartridge Memory is acessible in this memory region."},
+                {startAddress: 0x8000, endAddress: 0x9FFF, color:{r: 25, g: 125,b: 25}, name: "RAM", description: "8 KB of RAM are accessible in this memory region."},
+                {startAddress: 0xA000, endAddress: 0xDFFF, color:{r: 35, g: 35, b: 150}, name: "VRAM", description: "16 KB of Video RAM are accessible in this memory region."},
+                {startAddress: 0xE000, endAddress: 0xEFFF, name: "Unmapped", description: "This memory region is not connected to any hardware."},
+                {startAddress: 0xF000, endAddress: 0xFEFF, color:{r: 60, g: 60, b: 60}, name: "Peripheral 1", description: "This memory region is mapped to some example peripheral hardware."},
+                {startAddress: 0xFF00, endAddress: 0xFFFF, color:{r: 75, g: 75, b: 75}, name: "Peripheral 2", description: "This memory region is mapped to another example peripheral hardware."}
+            ]}
+        />
         <p>
             So let's recap: Every system has a Memory Bus which lets the hardware communicate by reading or writing data from and to each other. The Memory Bus knows where to put the
             data through the use of Memory Addresses. Certain ranges of Memory Addresses (also known as Memory Regions) are usually connected to specific hardware within the system,

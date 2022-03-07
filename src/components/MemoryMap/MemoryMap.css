@@ -1,0 +1,46 @@
+.MemoryMapContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.MemoryRegion {
+    display: flex;
+    background-color: rgb(30, 30, 30);
+}
+
+.MemoryRegion:hover {
+    filter: brightness(1.15);
+}
+
+.AddressLabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Press Start 2P';
+    border-top: 2px solid white;
+    border-right: 1px dotted white;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 0.5em;
+}
+
+.RegionTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0.5em;
+    padding-left: 1em;
+    font-size: medium;
+    border-top: 2px solid white;
+}
+
+.RegionTitle h3 {
+    font-size: small;
+    margin: 0;
+}
+
+.MemoryMapBottom {
+    border-top: 2px solid white;
+}

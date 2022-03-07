@@ -6,9 +6,3 @@
     align-items: center;
     justify-content: center;
 }
-
-.AppContent {
-    width: min(80vw, 75em);
-    background-color: #1a1a1a;
-    padding: 2em;
-}

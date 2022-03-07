@@ -5,18 +5,18 @@ import Homepage from "./pages/Homepage/Homepage";
 import EmudevBasics from "./pages/EmudevBasics/EmudevBasics";
 import SpaceInvaders from "./pages/Arcade/SpaceInvaders/SpaceInvaders";
 
+const wrapPage = (Component: Function) => <div className="Page"><Component/></div>
+
 export default function App() {
     return (
         <>
         <Header />
         <div className="MainContainer">
-            <div className="AppContent">
-                <Routes>
-                    <Route path="/basics" element={<EmudevBasics />} />
-                    <Route path="/arcade/spaceinvaders" element={<SpaceInvaders />} />
-                    <Route path="*" element={<Homepage />} />
-                </Routes>
-            </div>
+            <Routes>
+                <Route path="/basics" element={wrapPage(EmudevBasics)} />
+                <Route path="/arcade/spaceinvaders" element={wrapPage(SpaceInvaders)} />
+                <Route path="*" element={wrapPage(Homepage)} />
+            </Routes>
         </div>
         </>
     );

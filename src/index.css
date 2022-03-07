@@ -36,6 +36,18 @@ a {
     color: cyan;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+.Page {
+    width: min(80vw, 75em);
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    background-color: #1a1a1a;
+    padding: 2em;
+}
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {

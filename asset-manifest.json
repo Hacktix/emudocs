@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.38091008.css",
-    "main.js": "/static/js/main.c384603b.js",
+    "main.css": "/static/css/main.2f65e836.css",
+    "main.js": "/static/js/main.6e4a93cf.js",
     "static/media/PTSansNarrow-Regular.ttf": "/static/media/PTSansNarrow-Regular.68e86cce5b8c98f6305b.ttf",
     "static/media/PressStart2P-Regular.ttf": "/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
     "static/media/emudocs-banner.png": "/static/media/emudocs-banner.824beec7f8e8eaf19849.png",
     "index.html": "/index.html",
-    "main.38091008.css.map": "/static/css/main.38091008.css.map",
-    "main.c384603b.js.map": "/static/js/main.c384603b.js.map"
+    "main.2f65e836.css.map": "/static/css/main.2f65e836.css.map",
+    "main.6e4a93cf.js.map": "/static/js/main.6e4a93cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.38091008.css",
-    "static/js/main.c384603b.js"
+    "static/css/main.2f65e836.css",
+    "static/js/main.6e4a93cf.js"
   ]
 }

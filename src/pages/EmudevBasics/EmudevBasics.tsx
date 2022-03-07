@@ -116,7 +116,7 @@ export default function EmudevBasics() {
         <p>
             A <b>Stack Pointer</b>, which keeps track of the lower limit of a memory region known as <b>The Stack</b>. The Stack is commonly used as a quick type of temporary storage,
             and many processors have dedicated instructions to write data to or read data from the stack (also known as "pushing" or "popping"). For a more detailed explanation,
-            check out <a href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">the relevant Wikipedia article.</a>
+            check out <a target="_blank" href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">the relevant Wikipedia article.</a>
         </p>
         <p>
             A range of <b>Data Registers</b> which can be used for arithmetic operations and to hold data. While a processor may have multiple data registers, it's not uncommon for
@@ -139,21 +139,21 @@ export default function EmudevBasics() {
         <p>
             Once you're familiar with the concepts explained in the paragraphs above, you can start giving own first emulator a shot! If you want to get more familiar with the whole
             concept of Fetch - Decode - Execute, I'd recommend choosing a <b>CHIP-8 Interpreter</b> as your first project. While there's no documentation for CHIP-8 on this site, I
-            can recommend <a href="http://devernay.free.fr/hacks/chip8/C8TECH10.HTM">Cowgod's CHIP-8 Technical Reference</a> as
-            well as <a href="https://tobiasvl.github.io/blog/write-a-chip-8-emulator/">Tobias V. Langhoff's Guide to making a Chip-8 emulator</a>.
+            can recommend <a target="_blank" href="http://devernay.free.fr/hacks/chip8/C8TECH10.HTM">Cowgod's CHIP-8 Technical Reference</a> as
+            well as <a target="_blank" href="https://tobiasvl.github.io/blog/write-a-chip-8-emulator/">Tobias V. Langhoff's Guide to making a Chip-8 emulator</a>.
         </p>
         <p>
             If you're feeling confident of your understanding and are looking for something a little bit more challenging, the Space Invaders Arcade Machine is a good starter project
             and first "real hardware". It uses an Intel 8080 CPU, which is very simple to emulate and has many similarities with the more common Z80 processor, doesn't use any graphics
             chips, so it's easy to get some graphics showing, and it uses dedicated separate bitshifting hardware which is an excellent introduction to the idea of emulating
             system-specific hardware. The documentation of Space Invaders on Emudocs is still in progress, but in the mean time I recommend
-            the <a href="https://computerarcheology.com/Arcade/SpaceInvaders/Hardware.html">Computer Archeology page on Space Invaders.</a>
+            the <a target="_blank" href="https://computerarcheology.com/Arcade/SpaceInvaders/Hardware.html">Computer Archeology page on Space Invaders.</a>
         </p>
         <p>
             Otherwise, if you're already very familiar with low-level programming, you might want to try emulating the Nintendo Gameboy. The complexity of the system is definitely
             a step up from CHIP-8 or Space Invaders, but it's still very manageable, especially if you're not completely new to working close to the hardware level. The documentation
-            of the Gameboy on this site is also in the works, but <a href="https://gbdev.io/pandocs/">The Gameboy Pandocs</a> are arguably the best source of information you need
-            to develop an emulator.
+            of the Gameboy on this site is also in the works, but <a target="_blank" href="https://gbdev.io/pandocs/">The Gameboy Pandocs</a> are arguably the best source of
+            information you need to develop an emulator.
         </p>
         </>
     )

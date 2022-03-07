@@ -15,10 +15,12 @@ export default function Header() {
                     <h3 className="NavigationLabel">Emudev Basics</h3>
                 </Link>
                 <DropdownMenu label="Arcade">
-                    <p>Coming Soon!</p>
+                    <Link to="/arcade/spaceinvaders">
+                        Space Invaders
+                    </Link>
                 </DropdownMenu>
                 <DropdownMenu label="Nintendo">
-                    <p>Coming Soon!</p>
+                    Coming Soon!
                 </DropdownMenu>
             </div>
         </div>

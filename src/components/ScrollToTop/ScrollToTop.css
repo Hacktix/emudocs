@@ -1,0 +1,16 @@
+.ScrollToTopButton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    margin: 1em;
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+    user-select: none;
+    border-radius: 25%;
+    transition: all 0.15s;
+}

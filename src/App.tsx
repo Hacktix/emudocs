@@ -12,6 +12,7 @@ export default function App() {
         <div className="MainContainer">
             <div className="AppContent">
                 <Routes>
+                    <Route path="/basics" element={<EmudevBasics />} />
                     <Route path="*" element={<Homepage />} />
                 </Routes>
             </div>

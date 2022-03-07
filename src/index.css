@@ -18,10 +18,12 @@ body {
     margin: 0px;
     font-family: 'PT Sans Narrow';
     font-size: small;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Press Start 2P';
+    scroll-margin-top: 7.5em;
 }
 
 p {

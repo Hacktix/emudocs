@@ -1,0 +1,28 @@
+.TableOfContents {
+    font-size: 1.5em;
+    padding: 1em;
+    padding-left: 0px;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.TOCTitle {
+    margin-top: 0px;
+    margin-bottom: 1em;
+}
+
+.HeadingsList {
+    list-style-type: '\2B8A';
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.TOCEntry {
+    color: cyan;
+    cursor: pointer;
+    user-select: none;
+}
+
+.TOCEntry:hover {
+    filter: brightness(0.75);
+}

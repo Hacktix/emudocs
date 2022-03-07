@@ -1,4 +1,5 @@
 import MemoryMap from "../../components/MemoryMap/MemoryMap"
+import TableOfContents from "../../components/TableOfContents/TableOfContents"
 
 export default function EmudevBasics() {
     return (
@@ -14,9 +15,9 @@ export default function EmudevBasics() {
             making your own. That being said, let's get into it!
         </p>
         
-        <br/>
+        <TableOfContents />
 
-        <h2>What do Emulators do?</h2>
+        <h2 id="whatdo">What do Emulators do?</h2>
         <p>
             This might seem like a dumb question at first. They play console games on devices that aren't consoles, right? But that's a very general answer.
             From a more technical point of view, Emulators try to "pretend to be" (or "emulate") a certain set of hardware, usually game consoles. This is not as simple
@@ -34,7 +35,7 @@ export default function EmudevBasics() {
         
         <br/>
 
-        <h3>The Memory Bus</h3>
+        <h3 id="memorybus">The Memory Bus</h3>
         <p>
             Every single emulate-able machine in existence has a Memory Bus. Effectively, the Memory Bus is the wiring that connects all the hardware within the system and lets
             it communicate with each other. If you're a complete beginner this may already sound complicated, but it really isn't (at least most of the time). Usually, especially
@@ -74,13 +75,13 @@ export default function EmudevBasics() {
         
         <br/>
 
-        <h3>The CPU</h3>
+        <h3 id="cpu">The CPU</h3>
         <p>
             The heart of every system is the CPU, or Central Processing Unit. It's responsible for executing code and, effectively, <i>making things do stuff</i>. How does it do this?
             Well, generally, Processors follow a flow of operations known as the <b>Fetch - Decode - Execute Loop</b>. If you're new to this sort of stuff that might not mean much to
             you, so let's go through each of those three terms one by one.
         </p>
-        <h4>Fetch - Decode - Execute</h4>
+        <h4 id="fde">Fetch - Decode - Execute</h4>
         <p>
             <b>Fetch:</b> The Processor needs to know what exactly it has to do. As a programmer unfamiliar with low-level operations this may be new to you, but effectively, the CPU
             is given what's known as "instructions". These instructions are pretty much nothing more than one or more bytes that tell the Processor what exactly it's supposed to do.
@@ -103,7 +104,7 @@ export default function EmudevBasics() {
             The set of all instructions a processor can execute is referred to as the <b>Instruction Set</b>. While there may be some similarities between some processors, there's
             no "general" instruction set - each processor type has it's own which needs to be emulated.
         </p>
-        <h4>Registers</h4>
+        <h4 id="registers">Registers</h4>
         <p>
             Another term which you will most definitely come across is <b>Registers</b>. Long story short, Registers are a very small but very fast type of data storage within
             the processor itself which is commonly used to make loading and saving data faster than having to read and write from memory each time. Which registers there are and what
@@ -125,7 +126,7 @@ export default function EmudevBasics() {
 
         <br/>
 
-        <h3>Additional Hardware</h3>
+        <h3 id="additional">Additional Hardware</h3>
         <p>
             The Memory Bus and the CPU are the only two hardware parts that every system has. All other hardware that you may have to emulate heavily depends on the system, and
             there's almost nothing system-specific hardware has in common with that of other systems. For details on graphic chips, audio processing chips or any other processors
@@ -134,7 +135,7 @@ export default function EmudevBasics() {
 
         <br/>
 
-        <h2>Your First Emulator</h2>
+        <h2 id="firstemu">Your First Emulator</h2>
         <p>
             Once you're familiar with the concepts explained in the paragraphs above, you can start giving own first emulator a shot! If you want to get more familiar with the whole
             concept of Fetch - Decode - Execute, I'd recommend choosing a <b>CHIP-8 Interpreter</b> as your first project. While there's no documentation for CHIP-8 on this site, I

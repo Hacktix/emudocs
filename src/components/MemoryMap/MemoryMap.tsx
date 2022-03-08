@@ -31,7 +31,7 @@ type MemoryRegionProps = {
 }
 
 
-function MemoryRegion(props: MemoryRegionProps) {
+function MemoryRegionDisplay(props: MemoryRegionProps) {
     const formatAddress = (address: number) => props.addressPrefix + address.toString(props.addressRadix).padStart(props.addressLength, "0").toUpperCase();
     const desc = props.region.description ? props.region.description : null;
     return (
@@ -80,7 +80,7 @@ export default function MemoryMap(props: MemoryMapProps) {
                 const style: CSSProperties = {};
                 if(region.color)
                     style.backgroundColor = RGBtoCSS(region.color);
-                return <MemoryRegion
+                return <MemoryRegionDisplay
                     key={`MemRegion_${region.startAddress}_${region.name}`}
                     style={style}
                     region={region}

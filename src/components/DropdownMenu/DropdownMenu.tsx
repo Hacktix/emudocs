@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./DropdownMenu.css";
 
 export type DropdownMenuProps = {

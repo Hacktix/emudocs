@@ -1,0 +1,30 @@
+.BitsContainer {
+    display: flex;
+}
+
+.Bit {
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.Clickable {
+    cursor: pointer;
+}
+
+.BitSelector {
+    width: 2em;
+    height: 2px;
+}
+
+.ShiftRegContainer input {
+    background-color: rgb(40, 40, 40);
+    border: none;
+    border-bottom: 1px dotted white;
+    color: white;
+    padding: 0.5em;
+    outline: none;
+}

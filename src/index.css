@@ -36,6 +36,17 @@ a {
     color: cyan;
 }
 
+table {
+    border-spacing: 0px;
+}
+
+td {
+    padding: 0.15em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-bottom: 1px dotted #666;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -46,6 +57,12 @@ a:hover {
     margin-bottom: 2.5em;
     background-color: #1a1a1a;
     padding: 2em;
+    font-size: medium;
+}
+
+.TableBorderRight {
+   border-right: 1px solid white;
+   padding-right: 1em;
 }
 
 /* Scrollbar */
